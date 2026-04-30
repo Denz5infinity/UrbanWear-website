@@ -8,6 +8,11 @@ UrbanWear is a fully responsive web application built with HTML, CSS, and JavaSc
 
 **Brand Tagline:** _Street style, elevated_
 
+## Preview
+
+![Homepage Screenshot](Assets/images/preview-home.png)
+![Shop Screenshot](Assets/images/preview-shop.png)
+
 ## Future Enhancements
 
 - Integrate backend (Node.js / Firebase)
