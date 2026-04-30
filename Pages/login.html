@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login | UrbanWear</title>
+  <link rel="stylesheet" href="../styles/pages/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="brand" data-page="other">
+      <img src="../assets/images/logo-detailed.png" alt="UrbanWear logo" class="logo">
+      <div class="brand-copy">
+        <span class="brand-name">UrbanWear</span>
+        <span class="brand-tagline">Street style, elevated</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/shop.html">Shop</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="../pages/login.html" class="btn-primary">Login</a>
+      <a href="../pages/signup.html" class="btn-secondary">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- LOGIN SECTION -->
+  <section class="login-section">
+    <div class="login-container">
+      <div class="login-card">
+        <div class="login-header">
+          <h1>Welcome Back</h1>
+          <p>Sign in to your UrbanWear account</p>
+        </div>
+
+        <form class="login-form" action="" method="post">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input 
+              id="email" 
+              name="email" 
+              type="email" 
+              placeholder="you@example.com" 
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="password-input">
+              <input 
+                id="password" 
+                name="password" 
+                type="password" 
+                placeholder="Enter your password" 
+                required
+              >
+              <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <label class="remember-me">
+              <input type="checkbox" name="remember">
+              <span>Remember me</span>
+            </label>
+            <a href="../pages/password-reset.html" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+        </form>
+
+        <div class="divider">
+          <span>OR</span>
+        </div>
+
+        <div class="social-login">
+          <button class="social-btn twitter" type="button">
+            <i class="fab fa-x-twitter"></i>
+            <span>Continue with X</span>
+          </button>
+          <button class="social-btn facebook" type="button">
+            <i class="fab fa-facebook-f"></i>
+            <span>Continue with Facebook</span>
+          </button>
+          <button class="social-btn google" type="button">
+            <i class="fab fa-google"></i>
+            <span>Continue with Google</span>
+          </button>
+        </div>
+
+        <p class="signup-prompt">
+          Don't have an account? <a href="../pages/signup.html">Sign up here</a>
+        </p>
+
+        <p class="security-note">
+          <i class="fas fa-lock"></i>
+          Your account is secure. We never share your information.
+        </p>
+      </div>
+
+      <div class="login-benefits">
+        <h2>Why Login?</h2>
+        <ul class="benefits-list">
+          <li>
+            <i class="fas fa-truck"></i>
+            <div>
+              <strong>Track Orders</strong>
+              <p>Real-time updates on your shipments</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-heart"></i>
+            <div>
+              <strong>Save Favorites</strong>
+              <p>Keep your favorite items in one place</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-gift"></i>
+            <div>
+              <strong>Exclusive Deals</strong>
+              <p>Members-only discounts and early access</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-lightning-bolt"></i>
+            <div>
+              <strong>Faster Checkout</strong>
+              <p>Saved addresses and payment methods</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>UrbanWear</h3>
+        <p>Timeless streetwear built for everyday confidence. Discover fresh drops, quality staples, and styling made simple.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <a href="#">New Arrivals</a>
+          <a href="#">Best Sellers</a>
+          <a href="#">Gift Cards</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Customer Care</h4>
+          <a href="#">Shipping Info</a>
+          <a href="#">Returns</a>
+          <a href="../pages/contact.html">Contact Support</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 UrbanWear. Designed for modern style.</p>
+      <div class="footer-policy">
+        <a href="../pages/privacy.html">Privacy Policy</a>
+        <a href="../pages/terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/pages/login.js"></script>
+  <script src="scripts/pages/logo-switcher.js"></script>
+</body>
+</html>

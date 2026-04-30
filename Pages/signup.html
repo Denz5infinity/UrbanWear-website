@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign up | UrbanWear</title>
+  <link rel="stylesheet" href="../styles/pages/signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand" data-page="other">
+      <img src="../assets/images/logo-detailed.png" alt="UrbanWear logo" class="logo">
+      <div class="brand-copy">
+        <span class="brand-name">UrbanWear</span>
+        <span class="brand-tagline">Street style, elevated</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/shop.html">Shop</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="../pages/login.html" class="btn-primary">Login</a>
+      <a href="../pages/signup.html" class="btn-secondary">Sign Up</a>
+    </div>
+  </nav>
+
+  <section class="signup-section">
+    <div class="signup-container">
+      <div class="signup-card">
+        <div class="signup-header">
+          <h1>Create your UrbanWear account</h1>
+          <p>Sign up for exclusive access to new drops, faster checkout, order tracking, and member-only rewards.</p>
+        </div>
+
+        <form class="signup-form" action="" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <div class="input-group">
+                <span class="input-icon"><i class="fas fa-user"></i></span>
+                <input id="first-name" name="firstName" type="text" placeholder="First name" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <div class="input-group">
+                <span class="input-icon"><i class="fas fa-user"></i></span>
+                <input id="last-name" name="lastName" type="text" placeholder="Last name" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <div class="input-group">
+              <span class="input-icon"><i class="fas fa-envelope"></i></span>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-group">
+              <span class="input-icon"><i class="fas fa-lock"></i></span>
+              <input id="password" name="password" type="password" placeholder="Create a password" required>
+              <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <div class="input-group">
+              <span class="input-icon"><i class="fas fa-lock"></i></span>
+              <input id="confirm-password" name="confirmPassword" type="password" placeholder="Confirm your password" required>
+              <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <label class="terms-check">
+            <input type="checkbox" name="terms" required>
+            I agree to the <a href="../pages/terms.html">terms and conditions</a>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-full">Create account</button>
+        </form>
+
+        <div class="divider"><span>OR</span></div>
+
+        <div class="social-login">
+          <button class="social-btn twitter" type="button">
+            <i class="fab fa-x-twitter"></i>
+            <span>Continue with X</span>
+          </button>
+          <button class="social-btn facebook" type="button">
+            <i class="fab fa-facebook-f"></i>
+            <span>Continue with Facebook</span>
+          </button>
+          <button class="social-btn google" type="button">
+            <i class="fab fa-google"></i>
+            <span>Continue with Google</span>
+          </button>
+        </div>
+
+        <p class="signup-prompt">
+          Already have an account? <a href="../pages/login.html">Sign in here</a>
+        </p>
+      </div>
+
+      <div class="signup-benefits">
+        <h2>Why join UrbanWear?</h2>
+        <ul class="benefits-list">
+          <li>
+            <i class="fas fa-star"></i>
+            <div>
+              <strong>Early Access</strong>
+              <p>Be first to shop new arrivals and collections.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-truck"></i>
+            <div>
+              <strong>Fast Delivery</strong>
+              <p>Enjoy faster shipping and order tracking.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-heart"></i>
+            <div>
+              <strong>Favorites</strong>
+              <p>Save your go-to looks in one place.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-gift"></i>
+            <div>
+              <strong>Exclusive Rewards</strong>
+              <p>Unlock member-only offers and special deals.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>UrbanWear</h3>
+        <p>Timeless streetwear built for everyday confidence. Discover fresh drops, quality staples, and styling made simple.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <a href="#">New Arrivals</a>
+          <a href="#">Best Sellers</a>
+          <a href="#">Gift Cards</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Customer Care</h4>
+          <a href="#">Shipping Info</a>
+          <a href="#">Returns</a>
+          <a href="../pages/help.html">Contact Support</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 UrbanWear. Designed for modern style.</p>
+      <div class="footer-policy">
+        <a href="../pages/privacy.html">Privacy Policy</a>
+        <a href="../pages/terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/pages/signup.js"></script>
+  <script src="scripts/pages/logo-switcher.js"></script>
+</body>
+</html>

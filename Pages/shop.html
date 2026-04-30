@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shop | UrbanWear</title>
+  <link rel="stylesheet" href="../styles/pages/shop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand" data-page="other">
+      <img src="../assets/images/logo-detailed.png" alt="UrbanWear logo" class="logo">
+      <div class="brand-copy">
+        <span class="brand-name">UrbanWear</span>
+        <span class="brand-tagline">Street style, elevated</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/shop.html">Shop</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." id="search-input">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <a href="../pages/login.html" class="btn-primary">Login</a>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count">0</span>
+      </div>
+      <div class="wishlist-icon">
+        <i class="fas fa-heart"></i>
+        <span class="wishlist-count">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FEATURED SECTION -->
+  <section class="featured-section">
+    <div class="featured-container">
+      <div class="featured-header">
+        <h2>Best Sellers</h2>
+        <p>Our most loved pieces, picked by you.</p>
+      </div>
+      <div class="featured-grid" id="featured-grid">
+        <!-- Products will be loaded here by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS SECTION -->
+  <section class="arrivals-section">
+    <div class="arrivals-container">
+      <div class="arrivals-header">
+        <h2>New Arrivals</h2>
+        <p>Fresh drops just landed. Shop the latest now.</p>
+      </div>
+      <div class="arrivals-grid" id="arrivals-grid">
+        <!-- Products will be loaded here by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL PRODUCTS SECTION -->
+  <section class="all-products-section">
+    <div class="products-container">
+      <div class="products-header">
+        <h2>All Products</h2>
+      </div>
+
+      <!-- CATEGORY FILTERS -->
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="shirts">Shirts</button>
+        <button class="filter-btn" data-category="shorts">Shorts</button>
+        <button class="filter-btn" data-category="hoodies">Hoodies</button>
+        <button class="filter-btn" data-category="shoes">Shoes</button>
+        <button class="filter-btn" data-category="accessories">Accessories</button>
+      </div>
+
+      <!-- PRODUCTS GRID -->
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be loaded here by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>UrbanWear</h3>
+        <p>Timeless streetwear built for everyday confidence. Discover fresh drops, quality staples, and styling made simple.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <a href="#">New Arrivals</a>
+          <a href="#">Best Sellers</a>
+          <a href="#">Gift Cards</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Customer Care</h4>
+          <a href="#">Shipping Info</a>
+          <a href="#">Returns</a>
+          <a href="../pages/help.html">Contact Support</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 UrbanWear. Designed for modern style.</p>
+      <div class="footer-policy">
+        <a href="../pages/privacy.html">Privacy Policy</a>
+        <a href="../pages/terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/pages/shop.js"></script>
+  <script src="scripts/pages/logo-switcher.js"></script>
+</body>
+</html>

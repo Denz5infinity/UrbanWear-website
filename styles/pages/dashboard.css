@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+aside {
+    width: 200px;
+    height: 100vh;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+aside a {
+    display: block;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: lightgray;
+    padding: 20px;
+    text-align: center;
+}
