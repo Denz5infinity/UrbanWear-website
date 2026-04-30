@@ -4,20 +4,16 @@ A modern, responsive e-commerce website for UrbanWear, a street style clothing b
 
 ## Project Overview
 
-UrbanWear is a fully responsive web application built with HTML, CSS, and JavaScript. The site features a clean, contemporary design with a dual-logo branding system and comprehensive user authentication pages.
+UrbanWear is a fully responsive web application built with HTML, CSS, and JavaScript. The site features a clean, contemporary design with a dual-logo branding system and comprehensive User Authentication UI (frontend only, no backend integration yet).
 
 **Brand Tagline:** _Street style, elevated_
 
-## Features
+## Future Enhancements
 
-- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
-- **Dual-Logo Branding System** - Detailed logo on homepage, simplified text logo on other pages
-- **User Authentication** - Login, signup, and password reset pages
-- **E-Commerce Shop** - Product showcase and shopping interface
-- **Legal Pages** - Terms of Service and Privacy Policy
-- **Contact Page** - Customer communication channel
-- **User Dashboard** - Authenticated user area for account management
-- **Modern UI** - Clean, minimalist design with organized layout
+- Integrate backend (Node.js / Firebase)
+- Implement real authentication system
+- Add cart + checkout flow
+- Connect to a real product database
 
 ## Project Structure
 
@@ -184,5 +180,14 @@ The website uses a mobile-first responsive design approach with breakpoints for:
 For support or inquiries, please visit the [Contact Page](Pages/contact.html).
 
 ---
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.
+
+## Author
+
+Dennis Infinity  
+Frontend Developer (HTML, CSS, JavaScript)
 
 **Last Updated:** April 2026
