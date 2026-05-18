@@ -1,0 +1,12 @@
+{
+  "name": "urbanwear-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UrbanWear Website static project",
+  "scripts": {
+    "dev": "live-server --port=5501 --open=index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

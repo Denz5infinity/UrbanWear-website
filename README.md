@@ -4,7 +4,7 @@ A modern, responsive e-commerce website for UrbanWear, a street style clothing b
 
 ## Project Overview
 
-UrbanWear is a fully responsive web application built with HTML, CSS, and JavaScript. The site features a clean, contemporary design with a dual-logo branding system and comprehensive User Authentication UI (frontend only, no backend integration yet).
+UrbanWear is a fully responsive web application built with HTML, CSS, and JavaScript. The site features a clean, contemporary design with a dual-logo branding system and Firebase Email/Password Authentication.
 
 **Brand Tagline:** _Street style, elevated_
 
@@ -15,8 +15,8 @@ UrbanWear is a fully responsive web application built with HTML, CSS, and JavaSc
 
 ## Future Enhancements
 
-- Integrate backend (Node.js / Firebase)
-- Implement real authentication system
+- Expand product/backend integrations
+- Add more account features on top of Firebase Authentication
 - Add cart + checkout flow
 - Connect to a real product database
 
@@ -99,18 +99,19 @@ See [LOGO_SYSTEM_GUIDE.md](Tools/LOGO_SYSTEM_GUIDE.md) for detailed logo specifi
 ### Prerequisites
 
 - A modern web browser (Chrome, Firefox, Safari, Edge)
-- No backend server required for basic functionality
+- A Firebase project with Email/Password sign-in enabled
+- A local file server for ES modules
 
 ### Running Locally
 
 1. **Clone or download** the project to your local machine
-2. **Open the project folder** in your file explorer
-3. **Open `index.html`** in your web browser to view the homepage
-4. **Navigate** using the navbar to explore different pages
+2. **Add your Firebase values** in `scripts/firebase/env.js`
+3. **Serve the folder** with a local web server
+4. **Visit** `http://localhost:8000` in your browser
 
-### File Server (Optional)
+### File Server
 
-For best results with relative paths and certain features, serve the project using a local web server:
+Firebase ES modules need the site to be served through a local web server:
 
 ```bash
 # Using Python 3
@@ -125,11 +126,44 @@ php -S localhost:8000
 
 Then visit `http://localhost:8000` in your browser.
 
+## Firebase Authentication Setup
+
+1. Create a Firebase project at <https://console.firebase.google.com/>.
+2. Open **Authentication > Sign-in method** and enable **Email/Password**.
+3. Open **Project settings > General > Your apps** and create or select a Web app.
+4. Copy the Firebase config values.
+5. Replace the placeholder values in `scripts/firebase/env.js`.
+
+Example:
+
+```js
+window.__URBANWEAR_FIREBASE_CONFIG__ = {
+  apiKey: "your-api-key",
+  authDomain: "your-project.firebaseapp.com",
+  projectId: "your-project",
+  storageBucket: "your-project.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abcdef"
+};
+```
+
+`scripts/firebase/env.js` is listed in `.gitignore`, and `scripts/firebase/env.example.js` is the template to copy from. Firebase Web API keys are not admin secrets, but keeping config out of page logic makes the app easier to maintain.
+
+## Auth File Structure
+
+- `scripts/firebase/firebase-config.js` initializes Firebase Auth and keeps persistence enabled.
+- `scripts/auth/auth-service.js` contains signup, login, logout, auth-state watching, and friendly Firebase error messages.
+- `scripts/auth/form-utils.js` handles validation feedback, button loading states, and the success overlay.
+- `scripts/auth/auth-state.js` updates navbar account/logout UI after refreshes.
+- `scripts/pages/login.js`, `scripts/pages/signup.js`, and `scripts/pages/dashboard.js` connect the shared auth layer to each page.
+- `styles/auth.css` adds only the shared auth feedback/loading/navbar styles.
+
 ## Technologies Used
 
 - **HTML5** - Semantic markup and structure
 - **CSS3** - Responsive styling and layout
 - **JavaScript (ES6)** - Interactivity and dynamic features
+- **Firebase Authentication** - Email/password signup, login, logout, and persisted sessions
 - **Responsive Design** - Mobile-first approach
 
 ## Key Features Explained
@@ -162,7 +196,7 @@ The website uses a mobile-first responsive design approach with breakpoints for:
 ## Future Enhancements
 
 - Backend API integration for product catalog
-- User authentication system
+- Account profile and order history features
 - Shopping cart and checkout process
 - Product filtering and search
 - User review and ratings system

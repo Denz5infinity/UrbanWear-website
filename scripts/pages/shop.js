@@ -815,7 +815,7 @@ function attachEventListeners() {
  */
 function handleFilterClick(e) {
   const filterBtnPressed = e.currentTarget;
-  const filterValue = filterBtnPressed.dataset.filter;
+  const filterValue = filterBtnPressed.dataset.category;
   
   // Update active state
   document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
