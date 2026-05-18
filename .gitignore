@@ -1,1 +1,3 @@
 scripts/firebase/env.js
+node_modules
+dist
