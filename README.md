@@ -147,7 +147,7 @@ window.__URBANWEAR_FIREBASE_CONFIG__ = {
 };
 ```
 
-`scripts/firebase/env.js` is listed in `.gitignore`, and `scripts/firebase/env.example.js` is the template to copy from. Firebase Web API keys are not admin secrets, but keeping config out of page logic makes the app easier to maintain.
+`scripts/firebase/env.js`  `node_modules` is listed in `.gitignore`, and `scripts/firebase/env.example.js` is the template to copy from. Firebase Web API keys are not admin secrets, but keeping config out of page logic makes the app easier to maintain.
 
 ## Auth File Structure
 
